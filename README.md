@@ -7,7 +7,25 @@ Requirements
 candelapy is based on pygatt:
 
     $ sudo pip install pygatt
+    
+Installation
+------------
 
+    $ git-clone https://github.com/praschak/candelapy
+    
+Usage
+-----
+
+    $ python candelapy.py [intensity 0-100]
+    
+For example to turn on the lamp to full intensity
+
+    $ python candelapy.py 100
+    
+And to turn off the lamp
+
+    $ python candelapy.py 0
+    
 Command Line use with gattool
 -----------------------------
 
