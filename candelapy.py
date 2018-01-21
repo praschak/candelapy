@@ -1,23 +1,30 @@
+
 import pygatt
-import time
+import sys
 
 adapter = pygatt.GATTToolBackend()
 
+# Get command line argument
+intensity = int(sys.argv[1])
+
 try:
+
+    # Connect to lamp
     adapter.start()
     device = adapter.connect('F8:24:41:C0:71:A9')
 
-    # Turn lamp on
-    device.char_write_handle(0x001f, bytearray([0x43, 0x40, 0x01]))
+    if intensity > 0 & intensity <= 100:
 
-    # Set light intensity (laste byte from 0x01 to 0x64)
-    device.char_write_handle(0x001f, bytearray([0x43, 0x42, 0x64]))
+        # Turn lamp on
+        device.char_write_handle(0x001f, bytearray([0x43, 0x40, 0x01]))
 
-    # Wait for 3 seconds
-    time.sleep(3)
+        # Set light intensity
+        device.char_write_handle(0x001f, bytearray([0x43, 0x42, intensity]))
 
-    # Turn lamp off
-    device.char_write_handle(0x001f, bytearray([0x43, 0x40, 0x02]))
+    if intensity <= 0:
+
+        # Turn lamp off
+        device.char_write_handle(0x001f, bytearray([0x43, 0x40, 0x02]))
 
 finally:
     adapter.stop()
