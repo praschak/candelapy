@@ -14,6 +14,7 @@ Command Line Usage with gattool
 1. Make sure your lamp is not connected to any other bluetooth device (turn off bluetooth on your phone)
 
 2. Scan for the MAC-Adress of your lamp(s):
+
     $ sudo hcitool lescan
 
 3. Open gattol and connect to device 
