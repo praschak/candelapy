@@ -7,3 +7,27 @@ Requirements
 candelapy is based on pygatt:
 
     $ sudo pip install pygatt
+
+Command Line Usage with gattool
+-------------------------------
+
+1. Make sure your lamp is not connected to any other bluetooth device (e.g. turn off bluetooth on your phone)
+
+2. Scan for the MAC-Adress of your lamp(s):
+    $ sudo hcitool lescan
+
+3. Open gattol and connect to device 
+    $ gatttool -I
+    connect F8:24:41:C0:71:A9
+    Wait for "Connection successful"
+
+4. use these commands to control the lamp:
+
+Turn lamp on (to previously set intensity)
+    char-write-cmd 0x001f 434001000000000000000000000000000000
+
+Turn lamp off
+    char-write-cmd 0x001f 434002000000000000000000000000000000
+
+Control intensity (xx = 01-64 (<01 and >64 is ignored))
+    char-write-cmd 0x001f 4342xx000000000000000000000000000000
