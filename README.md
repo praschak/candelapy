@@ -8,8 +8,8 @@ candelapy is based on pygatt:
 
     $ sudo pip install pygatt
 
-Command Line Usage with gattool
--------------------------------
+Command Line use with gattool
+-----------------------------
 
 1. Make sure your lamp is not connected to any other bluetooth device (turn off bluetooth on your phone)
 
