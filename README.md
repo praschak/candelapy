@@ -16,15 +16,15 @@ Installation
 Usage
 -----
 
-    $ python candelapy.py [intensity 0-100]
+    $ python candelapy.py [lamps mac adress] [intensity 0-100]
     
 For example to turn on the lamp to full intensity
 
-    $ python candelapy.py 100
+    $ python candelapy.py F8:24:41:C0:71:A7 100
     
 And to turn off the lamp
 
-    $ python candelapy.py 0
+    $ python candelapy.py F8:24:41:C0:71:A 0
     
 Command Line use with gattool
 -----------------------------
