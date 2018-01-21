@@ -11,7 +11,7 @@ candelapy is based on pygatt:
 Installation
 ------------
 
-    $ git clone git://github.com//praschak/candelapy
+    $ git clone git://github.com/praschak/candelapy
     
 Usage
 -----
