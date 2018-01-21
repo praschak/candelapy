@@ -11,7 +11,7 @@ Requirements
 Installation
 ------------
 
-    $ git clone git://github.com/praschak/candelapy
+    $ git clone git://github.com/praschak/candelapy.git
     
 Usage
 -----
