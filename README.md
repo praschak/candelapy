@@ -22,7 +22,7 @@ To control your lamps(s) you need to find out their MAC adress. Usually they are
 
 Afterwards you can use the script as follows:
 
-    $ python candelapy.py [lamps mac adress] [intensity 0-100]
+    $ python candelapy.py [mac adress] [intensity 0-100]
     
 For example to turn on the lamp to full intensity:
 
