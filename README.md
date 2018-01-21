@@ -18,7 +18,7 @@ Usage
 
 To control your lamps(s) you need to find out their MAC adress. Usually they are listed as *yeelight_ms*.
 
-    sudo hcitool lescan
+    $ sudo hcitool lescan
 
 Afterwards you can use the script as follows:
 
