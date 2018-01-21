@@ -6,4 +6,4 @@ Installation
 
 candelapy is based on pygatt:
 
-  $ sudo pip install pygatt
+    $ sudo pip install pygatt
