@@ -16,7 +16,7 @@ Installation
 Usage
 -----
 
-To control your lamps(s) you need to find out their MAC adress. Usually they are listed as yeelight_ms.
+To control your lamps(s) you need to find out their MAC adress. Usually they are listed as *yeelight_ms*.
 
     sudo hcitool lescan
 
