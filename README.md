@@ -37,4 +37,4 @@ And to turn off the lamp:
     
 Open Tasks
 ----------
-- Activating the Fire-Mode and controlling several lamps (BLE mash) at once is not yet implemented in the official app, thus not reverse engeneerable.
+- Activating the Fire-Mode and controlling several lamps (BLE mash) at once is not yet implemented in the official app, thus not reverse engineerable.
