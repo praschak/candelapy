@@ -4,14 +4,15 @@ import sys
 
 adapter = pygatt.GATTToolBackend()
 
-# Get command line argument
-intensity = int(sys.argv[1])
+# Get command line arguments
+mac_addr = str(sys.argv[1])
+intensity = int(sys.argv[2])
 
 try:
 
     # Connect to lamp
     adapter.start()
-    device = adapter.connect('F8:24:41:C0:71:A9')
+    device = adapter.connect(mac_addr)
 
     if intensity > 0 & intensity <= 100:
 
