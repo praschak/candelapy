@@ -24,7 +24,10 @@ Afterwards you can use the script as follows:
 
     $ python candelapy.py [mac adress] [intensity 0-100]
     
-For example to turn on the lamp to full intensity:
+Examples
+--------
+
+To turn on the lamp to full intensity:
 
     $ python candelapy.py F8:24:41:C0:71:A7 100
     
