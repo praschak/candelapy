@@ -11,7 +11,7 @@ adapter.start()
 print("Trying to connect...")
 
 try:
- device = adapter.connect("F8:24:41:C0:71:A9")
+ device = adapter.connect("F8:24:41:C0:71:A7")
 except:
  print("Connection Error")
 finally:
