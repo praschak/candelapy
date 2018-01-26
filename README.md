@@ -4,7 +4,7 @@
 Requirements
 ------------
 
-*candelapy* is based on *pygatt*:
+*candelapy* is based on *pygatt*
 
     $ sudo pip install pygatt
     
