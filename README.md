@@ -8,6 +8,10 @@ Requirements
 
     $ sudo pip install pygatt
     
+If you want to use the webserver version you'll need *Flask*
+
+    $ sudo pip3 install flask
+    
 Installation
 ------------
 
@@ -23,6 +27,10 @@ To control your lamps(s) you need to find out their MAC adress. Usually they are
 Afterwards you can use the script as follows:
 
     $ python candelapy.py [mac adress] [intensity 0-100]
+    
+The webserver versions can be accessed via Port 5000:
+
+    http://[IP]:5000/yeelight?intensity=[intensity 0-100]
     
 Examples
 --------
